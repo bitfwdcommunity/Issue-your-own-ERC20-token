@@ -5,7 +5,7 @@ Hello fellow mooners 🌙 🚀
 
 As a blockchain community enabler, we want to help you be a part of the Blockchain community and the spread the message. In doing so, we have created a series of tutorials to help you get started!
 
-Tutorial 1:
+Tutorial 1: Issue your own token on Ethereum in less than 20 minutes.
 Tutorial 2: 
 Tutorial 3:
 Tutorial 4: 
