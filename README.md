@@ -1,18 +1,11 @@
-# Tutorials
-A series of tutorials to entertain and educate regarding the importance and awesomeness of Blockchain tech
+# Issue your own ERC20 token on the Ethereum Network
 
-Hello fellow passengers, the destination is : `moon  🚀🌙` 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/16810128/36881745-df9c599a-1e23-11e8-9ea3-58d4730bd537.jpeg">
+</p>
 
-bitfwd is Blockchain community initiative, we want to help you be a part of the Blockchain community, gain the necessary literacy. We have created a series of tutorials to help you get started!
+This repo contains the sample solidity file (XXX.sol) as seen on the Medium Post:
 
-* Tutorial 1: Issue your own token on Ethereum in less than 20 minutes.
+[How to issue your own token on Ethereum in less than 20 minutes](https://medium.com/bitfwd/how-to-issue-your-own-token-on-ethereum-in-less-than-20-minutes-ac1f8f022793)
 
-* Tutorial 2: Coming soon: Launch your ICO in 20 min
-
-* Tutorial 3: TBD
-
-* Tutorial 4: TBD
-
-* Tutorial 5: TBD
-
-Let us know if you have any questions or comments!
+Feel free to leave any issues and we will get back to you and help you out :) 
