@@ -1,17 +1,17 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'TCM' token contract
 //
 // Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
-// Decimals    : 18
+// Symbol      : TCM
+// Name        : TCM Token
+// Total supply: 21000000
+// Decimals    : 10
 //
 // Enjoy.
 //
-// (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2017. The MIT Licence.
+// (c) by ALP. The MIT Licence.
 // ----------------------------------------------------------------------------
 
 
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract TCM is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,11 +112,11 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
+    function TheCommonMan() public {
+        symbol = "TCM";
+        name = "0 TCM Token";
+        decimals = 10;
+        _totalSupply = 210000000;
         balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
         Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
     }
@@ -207,7 +207,7 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
 
 
     // ------------------------------------------------------------------------
-    // Don't accept ETH
+    // ------------------------------------------------------------------------
     // ------------------------------------------------------------------------
     function () public payable {
         revert();
