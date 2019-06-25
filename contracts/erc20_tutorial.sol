@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 // 'SalemCash' token contract
 //
-// Deployed to : 0x52F1E1e2Cd64855d4634eC9aC682E02852c366A2
+// Deployed to : 0xC907d1F8f1Ab246329F99f4D57df1d25f38Bda4C
 // Symbol      : SCS
 // Name        : SalemCash
 // Total supply: 20000000
@@ -117,8 +117,8 @@ contract SalemCash is ERC20Interface, Owned, SafeMath {
         name = "SalemCash Token";
         decimals = 18;
         _totalSupply = 20000000;
-        balances[0x52F1E1e2Cd64855d4634eC9aC682E02852c366A2] = _totalSupply;
-        emit Transfer(address(0), 0x52F1E1e2Cd64855d4634eC9aC682E02852c366A2, _totalSupply);
+        balances[0xC907d1F8f1Ab246329F99f4D57df1d25f38Bda4C] = _totalSupply;
+        emit Transfer(address(0), 0xC907d1F8f1Ab246329F99f4D57df1d25f38Bda4C, _totalSupply);
     }
 
 
