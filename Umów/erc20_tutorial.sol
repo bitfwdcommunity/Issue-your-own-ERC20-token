@@ -1,11 +1,11 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'Abi' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
+// Deployed to : 0x468E0f0CCb3c5F3c9557BDe7eA0d8ABA964F9081
+// Symbol      : Abi Token
+// Name        : Abi Token
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract AbiToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,8 +113,8 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+        symbol = "AbiToken";
+        name = "0 Abi Token";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
         balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
