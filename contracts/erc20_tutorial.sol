@@ -1,13 +1,13 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'AUZ' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
-// Decimals    : 18
+// Deployed to : 0xf75D4b45Ef2975411b989991e07870D547c28859
+// Symbol      : AUZ
+// Name        : AUZAURUMS Token
+// Total supply: 999
+// Decimals    : 3
 //
 // Enjoy.
 //
@@ -99,9 +99,9 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
-    string public symbol;
-    string public  name;
+contract AUZ is ERC20Interface, Owned, SafeMath {
+    string public AUZ;
+    string public  AUZAURUMS;
     uint8 public decimals;
     uint public _totalSupply;
 
@@ -113,12 +113,12 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        emit Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        symbol = "AUZ";
+        name = "AUZAURUMS Token";
+        decimals = 3;
+        _totalSupply = 999000;
+        balances[0xf75D4b45Ef2975411b989991e07870D547c28859] = _totalSupply;
+        emit Transfer(address(0), 0xf75D4b45Ef2975411b989991e07870D547c28859, _totalSupply);
     }
 
 
