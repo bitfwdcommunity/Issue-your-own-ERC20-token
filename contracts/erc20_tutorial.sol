@@ -1,12 +1,12 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'EXODOCOIN' CROWDSALE token contract
 //
 // Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
+// Symbol      : EXO
+// Name        : EXODOCOIN Token
+// Total supply: 200000000000000000000000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,11 +99,11 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
-    string public symbol;
-    string public  name;
-    uint8 public decimals;
-    uint public _totalSupply;
+contract exodocoinToken is ERC20Interface, Owned, SafeMath {
+    string public symbol = 'EXO";
+    string public  name = "exodocoin Token";
+    uint8 public decimals = 18;
+    uint public _totalSupply = 200000000000000000000000000;
 
     mapping(address => uint) balances;
     mapping(address => mapping(address => uint)) allowed;
@@ -113,17 +113,17 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+        symbol = "EXO";
+        name = "EXODOCOIN  Token";
         decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        emit Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        _totalSupply = 200000000000000000000000000;
+        balances[0x00d0cDFA0099DB01bE97Bb4b004aCBd814c197Ea] = _totalSupply;
+        emit Transfer(address(0), 0x00d0cDFA0099DB01bE97Bb4b004aCBd814c197Ea, _totalSupply);
     }
 
 
     // ------------------------------------------------------------------------
-    // Total supply
+    // Total supply = 200000000000000000000000000;
     // ------------------------------------------------------------------------
     function totalSupply() public constant returns (uint) {
         return _totalSupply  - balances[address(0)];
@@ -207,12 +207,16 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
 
 
     // ------------------------------------------------------------------------
-    // Don't accept ETH
+    // 2500 EXO Tokens per 1 ETH
     // ------------------------------------------------------------------------
     function () public payable {
-        revert();
-    }
-
+        require(now >= startDate && now <= endDate);
+        uint tokens;
+        if (now <= bonusEnds) {
+        tokens mesage = msg.value * 900;
+        } else {
+            tokens = msg.value * 700;
+        }    
 
     // ------------------------------------------------------------------------
     // Owner can transfer out any accidentally sent ERC20 tokens
